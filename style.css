@@ -1,0 +1,265 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Reusable CSS*/
+
+.spacer {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+/* NAVBAR SECTION CSS */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar-container {
+  background-color: #272727;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f8ea01;
+}
+
+.nav-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80px;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f8ea01;
+  width: 100%;
+  height: 56px;
+}
+
+.nav-menu.active {
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.nav-link {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.nav-link:hover {
+  color: lightblue;
+}
+
+.nav-logo {
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+/* HERO SECTION CSS */
+
+.update-content {
+  margin-top: 56px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  height: 320px;
+}
+
+.hero-content {
+  width: 750px;
+}
+
+.hero-content > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.hero-content > p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BLOG SECTION CSS */
+
+.blog-container {
+  height: 650px;
+}
+
+.blog-container > h2 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(1, 150px);
+}
+
+.grid-item {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+}
+
+.blog-title {
+  font-size: 30px;
+}
+
+.blog-text {
+  font-size: 16px;
+  height: 150px;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog-button {
+  background-color: #ff63b1;
+  border: none;
+  width: 214px;
+  padding: 0.7rem;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Make Grid Responsive for QOL */
+@media (min-width: 2000px) {
+  .grid {
+    grid-template-columns: repeat(3, 550px);
+    grid-template-rows: repeat(1, 150px);
+  }
+  .blog-container {
+    height: 800px;
+  }
+  .grid-item {
+    width: 550px;
+    height: 650px;
+  }
+  .blog-image {
+    height: 340px;
+  }
+  .blog-text {
+    height: 90px;
+  }
+}
+
+/* EMAIL SECTION CSS */
+
+.email-container {
+  background-color: #f5f5f5;
+  height: 295px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-container label {
+  font-family: "Poppins", sans-serif;
+}
+
+.inline {
+  margin-top: 0.3rem;
+}
+
+.emailContent input {
+  width: 380px;
+  padding: 0.5rem;
+  border: 1px solid lightgrey;
+  font-family: "Poppins", sans-serif;
+}
+
+.emailContent input::placeholder {
+  color: lightgrey;
+}
+
+.emailContent button {
+  background-color: #f8ea01;
+  border: none;
+  width: 180px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+/* FOOTER SECTION CSS */
+
+.footer-container {
+  height: 96px;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
