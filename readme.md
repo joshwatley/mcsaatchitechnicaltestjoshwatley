@@ -8,6 +8,8 @@ Notes:
 
 Optimised for 1080p -> 1440p Screens
 
+Some screenshots of final site :
+
 *Final Home Screen*
 ![Screenshot](final_version.png)
 
